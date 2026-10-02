@@ -1,3 +1,9 @@
+:root{
+    --border-style: 1px solid rgb(0 0 0 / 0.2);
+    --height: auto
+
+}
+
 main {
     max-width: 840px;
 }
