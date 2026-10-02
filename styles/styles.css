@@ -1,7 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 :root{
     --border-style: 1px solid rgb(0 0 0 / 0.2);
     --height: auto
-
 }
 
 main {
@@ -11,9 +16,10 @@ main {
 main img {
     width: 150px;
     height: auto;
-    border: var(--border-style);
-    padding: 0;
-    box-shadow: 0 0 30px #333;;
+    border: 1px solid #000;
+    padding: 2;
+    box-shadow: 0 0 30px #333;
+    float: right;
 }
 
 nav {
@@ -35,16 +41,18 @@ aside {
     background-color: #eee;
     color: #333;
     text-align: center;
-}
-
-main img {
-    width: 150px;
-    height: auto;
+    position: relative;
 }
 
 aside img {
     width: 200px;
     height: auto;
+}
+
+aside h2 {
+    position: absolute;
+    top: 20px;
+    left: 200px;
 }
 
 p {
@@ -53,10 +61,30 @@ p {
 
 h1 {
     color: #333;
+    padding: .5rem;
 }
 
 footer {
     margin-top: 15px;
     border-top: 1px solid #000;
     text-align: center;
+}
+
+/* Class selectors */
+.box {
+    margin: 1rem;
+    border: var(--border-style);
+    padding: 1rem;
+    background-color: #eee;
+    color: #000;/* Target your profile photo */
+img {
+    float: right;
+    margin-left: 20px; /* Adds space between the image and text/boxes */
+    margin-bottom: 10px;
+    clear: both;
+}
+
+.indent {
+    padding-left: 2rem;
+    clear: both;
 }
