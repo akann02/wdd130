@@ -23,6 +23,13 @@ header, main, footer {
     margin: 0 auto;
 }
 
+header {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    padding: 5px;
+    margin: auto;
+}
+
 h1, h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
@@ -34,11 +41,21 @@ nav, p, section, article {
 }
 
 footer {
-    margin-top: 5px;
+    margin: 30px;
+    display: grid;
+    align-items: center;
+    gap: 20px;
+    grid-template-columns: 1fr auto;
 }
 
+section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    gap: 30px;
+}
 
-.socialmedia a {
+.socialmedia, a {
     text-decoration: none;
 }
 
@@ -99,6 +116,26 @@ article {
 }
 
 .lists {
-    margin-left: 20px;
-    display: inline-block;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+.article-two {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: start;
+    gap: 5px;
+    width: 100%;
+}
+
+.specific-item {
+    grid-column: span 5;
+    margin-bottom: 10px;
+    padding: .6rem;
+}
+
+.history-text {
+    padding: .6rem;
 }
